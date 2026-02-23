@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background: #f5f2ec;
+  color: #2c2c2c;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+/* Destination Cards */
+.destination-card {
+  height: 260px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: scale(1.02);
+}
+
+.destination-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination-overlay h3 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Country Page */
+.country-page {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.country-page h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.country-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.country-page h3 {
+  margin-top: 40px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* Country Hero Image */
+.country-hero {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+.country-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(245, 242, 236, 1) 100%
+  );
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 0.6;
+}
