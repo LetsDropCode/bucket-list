@@ -25,12 +25,13 @@ return (
       <h1>{country.name}</h1>
       <p>{country.note}</p>
 
-      <h3>Kendall’s Dish</h3>
+      <h3>Recommended Dish</h3>
       <p>{country.recipeTitle}</p>
 
       <div style={{ marginTop: "20px" }}>
-        <p>{country.content}</p>
+        <div className="recipe-text">{country.content}</div>
       </div>
     </div>
   </div>
-);}
+);
+}

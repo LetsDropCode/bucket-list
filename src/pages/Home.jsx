@@ -5,8 +5,9 @@ export default function Home() {
   return (
     <div className="home">
       <h1>Lindsay & Kendall</h1>
-      <h2>Our Bucket List</h2>
-      <p>Tap a destination to discover the dish we’ll cook when we visit.</p>
+      <h2>Our Travel Bucket List</h2>
+      <p className="wedding-date">Established 26 March 2026</p>
+      <p>Tap a destination to discover the dish we want to try.</p>
 
       <div className="destinations">
         {countries.map((country) => (
